@@ -6,12 +6,14 @@
         xmlns:local="clr-namespace:screenLock"
         mc:Ignorable="d"
 		WindowStyle="None"
-		WindowState="Maximized"
+		Height="100"
+		Width="500"
 		WindowStartupLocation="CenterScreen"
 		Name="lockWindow"
 		Topmost="True"
-		Focusable="True"
-        Title="LockWindow" Height="450" Width="800">
+		WindowState="Maximized"
+		Closing="lockWindow_Closing"
+		Focusable="True">
 
 
 	<DockPanel>

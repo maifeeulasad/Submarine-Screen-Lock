@@ -42,16 +42,20 @@ namespace screenLock
         
         
 
-        private void lockButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+       
+        private void lockButton_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-            LockWindow lockedWindow = new LockWindow();
-            lockedWindow.Show();
-            Util.lockingTime = DateTime.Now;
+            //Closing = "lockWindow_Closing"
             Close();
         }
 
-        private void lockButton_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        private void lockButton_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+            SystemSounds.Beep.Play();
+            LockWindow lockedWindow = new LockWindow();
+            lockedWindow.Show();
+            //Console.WriteLine("closing \n\n\n\nashdghasgdjasgd");
+            Util.lockingTime = DateTime.Now;
             Close();
         }
     }

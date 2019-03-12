@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -24,15 +25,28 @@ namespace screenLock
         public LockWindow()
         {
             InitializeComponent();
+            Util.passWordMatch = false;
             Task.Factory.StartNew(() =>
             {
                 InvokeMethodExample();
             });
         }
 
+
+        
+
+
         private void InvokeMethodExample()
         {
-            Thread.Sleep(3000);
+            if(Util.forceClose)
+            {
+
+            }
+            else
+            {
+                Thread.Sleep(3000);
+
+            }
             Dispatcher.Invoke(() =>
             {
                 Background = Brushes.Aqua;
@@ -44,7 +58,9 @@ namespace screenLock
         {
             if (passwordBox.Password == "1234" || (DateTime.Now-Util.lockingTime).Seconds<=3)
             {
+                Util.passWordMatch = true;
                 MainWindow standbyWindow = new MainWindow();
+                Util.forceClose = false;
                 standbyWindow.Show();
                 Close();
                 
@@ -60,5 +76,17 @@ namespace screenLock
 
         }
 
+        private void lockWindow_Closing(object sender, CancelEventArgs e)
+        {
+            if(!Util.passWordMatch)
+            {
+                e.Cancel = true;
+
+            }
+            else
+            {
+                e.Cancel = false;
+            }
+        }
     }
 }

@@ -24,7 +24,8 @@
 		<Button TextBlock.TextAlignment="Center" 
 					TextBlock.FontStyle="Italic"
 					Name="lockButton"
-					MouseLeftButtonDown="lockButton_MouseLeftButtonDown"
+				
+					MouseDoubleClick="lockButton_MouseDoubleClick"
 					MouseRightButtonDown="lockButton_MouseRightButtonDown"
 					Background="{StaticResource AddButtonImageBrush}">
 

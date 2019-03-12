@@ -8,8 +8,13 @@ namespace screenLock
 {
     class Util
     {
+
+
+        public static bool forceClose = false;
+
         public static DateTime lockingTime = DateTime.Now;
 
+        public static bool passWordMatch = false;
 
     }
 }
