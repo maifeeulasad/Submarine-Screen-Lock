@@ -1,6 +1,11 @@
 # Screen-Lock
 
 
+**Password : 1234**
+
+<hr>
+
+
 *Lock your computer's screen, while all tasks keep running.*
 <hr>
 
