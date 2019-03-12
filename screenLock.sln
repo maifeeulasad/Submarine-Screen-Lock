@@ -9,12 +9,15 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		ScreenLock-b0.1|Any CPU = ScreenLock-b0.1|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.ScreenLock-b0.1|Any CPU.ActiveCfg = ScreenLock-b0.1|Any CPU
+		{EA05B4A4-F8C6-443A-BF9E-173BB21FF3B7}.ScreenLock-b0.1|Any CPU.Build.0 = ScreenLock-b0.1|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
