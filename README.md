@@ -17,9 +17,18 @@ Extract it, run screenLock.exe , **no need to install.**
 
 
 <hr>
+
+
 **Usage:**
+
 1.  *Double Click* on Lock Icon - Locks Screen
+
+
 2.  If you lock accidentaly press unlock *within 3 seconds*, it will unlock eventually, no need to enter password.
+
+
 3.  *Right Click* on Lock Icon - Closes Application
+
+
 
 <hr>
